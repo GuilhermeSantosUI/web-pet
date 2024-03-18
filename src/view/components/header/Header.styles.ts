@@ -27,16 +27,6 @@ export const HeaderRightSide = styled.div`
   gap: 32px;
 `;
 
-export const Logo = styled.p`
-  font-size: 20px;
-
-  color: #41BEBA;
-
-  span {
-    font-weight: bold;
-  }
-`;
-
 export const Username = styled.p`
   font-weight: 500;
   font-size: 16px;

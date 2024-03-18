@@ -1,16 +1,14 @@
 import { MagnifyingGlass } from "@phosphor-icons/react";
 import * as C from "./Header.styles";
 
+import logoImg from "../../assets/image-logo.png";
+
 export function Header() {
   return (
     <C.Container>
       <C.HeaderLeftSide>
         <div>
-          <C.Logo>
-            <span>dog</span>
-            house
-          </C.Logo>
-          <C.Subtitle>Pet Shop 🐶🐱</C.Subtitle>
+          <img src={logoImg} style={{ width: "130px" }} />
         </div>
 
         <div style={{ position: "relative" }}>

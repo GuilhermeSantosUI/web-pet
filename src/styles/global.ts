@@ -11,7 +11,7 @@ export default createGlobalStyle`${css`
 
   *:focus {
     outline: 0;
-  }
+  } 
 
   html,
   body,

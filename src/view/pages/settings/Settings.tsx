@@ -29,8 +29,6 @@ export function Settings() {
             display: "flex",
             height: "100%",
             gap: 20,
-
-            padding: '0 20px'
           }}
         >
           <div

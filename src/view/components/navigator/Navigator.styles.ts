@@ -1,7 +1,19 @@
 import { NavLink } from "react-router-dom";
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 export const Container = styled.div``;
+
+export const pop = keyframes`
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.86);
+  }
+  100% {
+    transform: scale(1);
+  }
+`;
 
 export const Content = styled(NavLink)`
   display: flex;
@@ -11,8 +23,6 @@ export const Content = styled(NavLink)`
 
   background-color: transparent;
   color: #000000;
-
-  transition: all 0.2s;
 
   &:hover {
     background-color: #f2f2f2;
@@ -27,6 +37,6 @@ export const Content = styled(NavLink)`
   }
 
   &:active {
-    transform: scale(0.9);
+    animation: ${pop} 0.44s;
   }
 `;
